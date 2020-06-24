@@ -1,0 +1,70 @@
+﻿@model CollegeManagement.MVC.Models.StudentViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentBirthDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentBirthDate)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StudentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<div class="container-fluid">
+    <h4>Enrolled Subjects</h4>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Grades.FirstOrDefault().Subject.SubjectName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grades.FirstOrDefault().Subject.Teacher.TeacherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grades.FirstOrDefault().GradeValue)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.Grades)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Subject.SubjectName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Subject.Teacher.TeacherName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GradeValue)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.SubjectId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.SubjectId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.SubjectId })
+                </td>
+            </tr>
+        }
+    </table>
+</div>

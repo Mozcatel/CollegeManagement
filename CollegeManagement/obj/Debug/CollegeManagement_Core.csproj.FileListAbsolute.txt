@@ -1,0 +1,2 @@
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement_Core\obj\Debug\CollegeManagement_Core.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement_Core\obj\Debug\CollegeManagement_Core.csproj.CoreCompileInputs.cache

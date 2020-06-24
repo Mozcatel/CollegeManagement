@@ -1,0 +1,11 @@
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement_Core\obj\Debug\CollegeManagement.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement_Core\bin\Debug\CollegeManagement.dll
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement_Core\bin\Debug\CollegeManagement.pdb
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement_Core\obj\Debug\CollegeManagement.dll
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement_Core\obj\Debug\CollegeManagement.pdb
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement\bin\Debug\CollegeManagement.dll
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement\bin\Debug\CollegeManagement.pdb
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement\obj\Debug\CollegeManagement.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement\obj\Debug\CollegeManagement.dll
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement\obj\Debug\CollegeManagement.pdb
+C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement\obj\Debug\CollegeManagement.csprojAssemblyReference.cache

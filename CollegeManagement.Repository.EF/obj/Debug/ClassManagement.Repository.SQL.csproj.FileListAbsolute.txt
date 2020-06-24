@@ -1,0 +1,14 @@
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\bin\Debug\ClassManagement.dll
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\bin\Debug\ClassManagement.pdb
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\obj\Debug\ClassManagement.Repository.SQL.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\obj\Debug\ClassManagement.dll
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\obj\Debug\ClassManagement.pdb
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\bin\Debug\ClassManagement.dll.config
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\bin\Debug\CollegeManagement_Core.dll
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\bin\Debug\EntityFramework.dll
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\bin\Debug\CollegeManagement_Core.pdb
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\bin\Debug\EntityFramework.xml
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\obj\Debug\ClassManagement.Repository.SQL.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\obj\Debug\ClassManagement.Repository.SQL.csproj.CopyComplete

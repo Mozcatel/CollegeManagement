@@ -1,0 +1,65 @@
+﻿@model CollegeManagement.MVC.Models.CourseDetailView
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseName)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CourseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<div class="container-fluid">
+    <h4>Course Subjects</h4>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Subjects.FirstOrDefault().SubjectName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subjects.FirstOrDefault().TeacherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subjects.FirstOrDefault().NumberOfStudents)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.Subjects)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SubjectName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeacherName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberOfStudents)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.SubjectId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.SubjectId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.SubjectId })
+                </td>
+            </tr>
+        }
+    </table>
+</div>

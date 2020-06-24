@@ -1,0 +1,6 @@
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\bin\Debug\ClassManagement.dll
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\bin\Debug\ClassManagement.pdb
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\obj\Debug\ClassManagemen.Repository.SQL.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\obj\Debug\ClassManagemen.Repository.SQL.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\obj\Debug\ClassManagement.dll
+C:\Users\User01\Desktop\College Management\CollegeManagement\ClassManagement\obj\Debug\ClassManagement.pdb

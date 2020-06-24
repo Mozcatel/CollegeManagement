@@ -1,0 +1,87 @@
+﻿@model CollegeManagement.MVC.Models.SubjectDetailView
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.SubjectName)</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubjectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubjectName)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SubjectId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<div class="container-fluid">
+    <h4>Subject Students</h4>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Grades.FirstOrDefault().StudentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grades.FirstOrDefault().StudentRegNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grades.FirstOrDefault().StudentBirthDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grades.FirstOrDefault().GradeValue)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.Grades)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentRegNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentBirthDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GradeValue)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.StudentId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.StudentId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.StudentId })
+                </td>
+            </tr>
+        }
+    </table>
+</div>

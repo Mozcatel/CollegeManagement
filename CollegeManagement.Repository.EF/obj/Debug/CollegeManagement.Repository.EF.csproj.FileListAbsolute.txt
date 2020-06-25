@@ -26,3 +26,17 @@ C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement.R
 C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement.Repository.EF\obj\Debug\ClassManagement.Repository.EF.dll
 C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement.Repository.EF\obj\Debug\ClassManagement.Repository.EF.pdb
 C:\Users\User01\Desktop\College Management\CollegeManagement\CollegeManagement.Repository.EF\obj\Debug\CollegeManagement.Repository.EF.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\bin\Debug\ClassManagement.Repository.EF.dll.config
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\bin\Debug\ClassManagement.Repository.EF.dll
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\bin\Debug\ClassManagement.Repository.EF.pdb
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\bin\Debug\CollegeManagement.dll
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\bin\Debug\EntityFramework.dll
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\bin\Debug\CollegeManagement.pdb
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\bin\Debug\EntityFramework.xml
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\obj\Debug\CollegeManagement.Repository.EF.csprojAssemblyReference.cache
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\obj\Debug\CollegeManagement.Repository.EF.csproj.CoreCompileInputs.cache
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\obj\Debug\CollegeManagement.Repository.EF.csproj.CopyComplete
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\obj\Debug\ClassManagement.Repository.EF.dll
+C:\Users\User01\Desktop\CollegeManagement\CollegeManagement.Repository.EF\obj\Debug\ClassManagement.Repository.EF.pdb

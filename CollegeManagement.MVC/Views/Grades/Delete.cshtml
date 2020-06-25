@@ -12,7 +12,7 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Student.StudentName)
+            Student
         </dt>
 
         <dd>
@@ -20,7 +20,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Subject.SubjectName)
+            Subject
         </dt>
 
         <dd>
@@ -28,16 +28,16 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.GradeValue)
+            Grade
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.GradeValue)
         </dd>
-
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">

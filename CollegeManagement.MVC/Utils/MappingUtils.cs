@@ -13,13 +13,21 @@ namespace CollegeManagement.MVC.Utils
         {
             foreach (var course in courses)
             {
-                yield return new CourseViewModel
+                yield return course.Subjects.Any() ? new CourseViewModel
                 {
                     CourseId = course.CourseId,
                     CourseName = course.CourseName,
                     GradeAverage = (int)(course.Subjects.Average(s => s.Grades.Average(g => g.GradeValue))),
                     NumberOfStudents = course.Subjects.SelectMany(s => s.Grades.Select(g => g.Student)).Distinct().Count(),
                     NumberOfTeachers = course.Subjects.Select(s => s.TeacherId).Distinct().Count()
+                }
+                : new CourseViewModel
+                {
+                    CourseId = course.CourseId,
+                    CourseName = course.CourseName,
+                    GradeAverage = 0,
+                    NumberOfStudents = 0,
+                    NumberOfTeachers = 0
                 };
             }
         }

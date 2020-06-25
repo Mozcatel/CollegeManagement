@@ -6,46 +6,49 @@
 
 <h2>List of Subjects</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.SubjectName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FirstOrDefault().CourseName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FirstOrDefault().TeacherName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FirstOrDefault().NumberOfStudents)
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
+<button type="button" class="btn btn-toolbar">
+    @Html.ActionLink("Create New Subject", "Create")
+</button>
+<table class="table table-hover table-responsive">
+    <thead>
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.SubjectName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CourseName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TeacherName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumberOfStudents)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.SubjectId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.SubjectId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.SubjectId })
-            </td>
+            <th>
+                Subject Name
+            </th>
+            <th>
+                Course
+            </th>
+            <th>
+                Teacher
+            </th>
+            <th>
+                Nº Of Students
+            </th>
+            <th></th>
         </tr>
-    }
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SubjectName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeacherName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberOfStudents)
+                </td>
+                <td>
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = item.SubjectId })</button>
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Details", "Details", new { id = item.SubjectId })</button>
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Delete", "Delete", new { id = item.SubjectId })</button>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>

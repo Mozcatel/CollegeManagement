@@ -4,13 +4,12 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
-
+<h2>Edit Student</h2>
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Student</h4>
         <hr />
@@ -18,7 +17,7 @@
         @Html.HiddenFor(model => model.StudentId)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.StudentName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="control-label col-md-2">Student Name</label>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.StudentName, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.StudentName, "", new { @class = "text-danger" })
@@ -26,10 +25,18 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.StudentBirthDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="control-label col-md-2">Student Birth Date</label>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.StudentBirthDate, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.StudentBirthDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Student Registry Name</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.StudentRegNumber, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.StudentRegNumber, "", new { @class = "text-danger" })
             </div>
         </div>
 

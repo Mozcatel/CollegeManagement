@@ -23,12 +23,18 @@ namespace CollegeManagement.Repository.EF
 
         public async Task<IEnumerable<Grade>> GetAsync()
         {
-            return await _context.Grades.Include(g => g.Student).Include(g => g.Subject).ToListAsync();
+            return await _context.Grades
+                .Include(g => g.Student)
+                .Include(g => g.Subject)
+                .ToListAsync();
         }
 
         public async Task<Grade> GetAsync(int id)
         {
-            return await _context.Grades.FindAsync(id);
+            return await _context.Grades
+                .Include(g => g.Student)
+                .Include(g => g.Subject)
+                .FirstOrDefaultAsync(g => g.GradeId == id);
         }
 
         public void Insert(Grade element)

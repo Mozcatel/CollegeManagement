@@ -11,7 +11,7 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.CourseName)
+            Course Name
         </dt>
 
         <dd>
@@ -19,7 +19,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.TeacherName)
+            Teacher
         </dt>
 
         <dd>
@@ -27,7 +27,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.SubjectName)
+            Subject
         </dt>
 
         <dd>
@@ -35,28 +35,23 @@
         </dd>
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.SubjectId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<button type="button" class="btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = Model.SubjectId })</button>
+<button type="button" class="btn btn-default">@Html.ActionLink("Back to List", "Index")</button>
 <div class="container-fluid">
-    <h4>Subject Students</h4>
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
+    <h4>Students in Subject</h4>
+    <table class="table table-hover table-striped">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Grades.FirstOrDefault().StudentName)
+                Student
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Grades.FirstOrDefault().StudentRegNumber)
+                Student Reg Number
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Grades.FirstOrDefault().StudentBirthDate)
+                Student Birth Date
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Grades.FirstOrDefault().GradeValue)
+                Grade
             </th>
             <th></th>
         </tr>
@@ -77,9 +72,15 @@
                     @Html.DisplayFor(modelItem => item.GradeValue)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.StudentId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.StudentId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.StudentId })
+                    <button type="button" class="btn btn-default">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.StudentId })
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        @Html.ActionLink("Details", "Details", new { id = item.StudentId })
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        @Html.ActionLink("Delete", "Delete", new { id = item.StudentId })
+                    </button>
                 </td>
             </tr>
         }

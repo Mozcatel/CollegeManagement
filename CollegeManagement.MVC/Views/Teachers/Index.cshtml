@@ -6,19 +6,19 @@
 
 <h2>List of Teachers</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
+<button type="button" class="btn btn-toolbar">
+    @Html.ActionLink("Create New Teacher", "Create")
+</button>
+<table class="table table-hover table-responsive">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.TeacherName)
+            Teacher Name
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TeacherBirthDate)
+            Teacher Birth Date
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TeacherSalary)
+            Teacher Salary
         </th>
         <th></th>
     </tr>
@@ -36,9 +36,9 @@
                 @Html.DisplayFor(modelItem => item.TeacherSalary)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.TeacherId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.TeacherId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.TeacherId })
+                <button type="button" class="btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = item.TeacherId })</button>
+                <button type="button" class="btn btn-default">@Html.ActionLink("Details", "Details", new { id = item.TeacherId })</button>
+                <button type="button" class="btn btn-default">@Html.ActionLink("Delete", "Delete", new { id = item.TeacherId })</button>
             </td>
         </tr>
     }

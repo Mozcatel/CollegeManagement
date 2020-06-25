@@ -6,11 +6,10 @@
 
 <h2>Edit</h2>
 
-
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Course</h4>
         <hr />
@@ -18,7 +17,7 @@
         @Html.HiddenFor(model => model.CourseId)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.CourseName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="control-label col-md-2">Course Name</label>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.CourseName, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.CourseName, "", new { @class = "text-danger" })

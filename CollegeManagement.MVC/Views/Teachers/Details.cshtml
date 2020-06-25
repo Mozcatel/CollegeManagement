@@ -1,17 +1,17 @@
 ﻿@model CollegeManagement.Model.Teacher
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Teacher Details";
 }
 
-<h2>Details</h2>
+<h2>Teacher Details</h2>
 
 <div>
     <h4>Teacher</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.TeacherName)
+            Teacher Name
         </dt>
 
         <dd>
@@ -19,7 +19,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.TeacherBirthDate)
+            Teacher Birth Date
         </dt>
 
         <dd>
@@ -27,16 +27,13 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.TeacherSalary)
+            Teacher Salary
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.TeacherSalary)
         </dd>
-
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TeacherId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<button type="button" class="btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = Model.TeacherId })</button>
+<button type="button" class="btn btn-default">@Html.ActionLink("Back to List", "Index")</button>

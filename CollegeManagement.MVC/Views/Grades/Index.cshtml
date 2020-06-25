@@ -6,40 +6,43 @@
 
 <h2>List of Grades</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Student.StudentName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Subject.SubjectName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.GradeValue)
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
+<button type="button" class="btn btn-toolbar">
+    @Html.ActionLink("Create New Grade", "Create")
+</button>
+<table class="table table-hover table-responsive">
+    <thead>
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Student.StudentName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Subject.SubjectName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.GradeValue)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.GradeId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.GradeId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.GradeId })
-            </td>
+            <th scope="col">
+                Student
+            </th>
+            <th scope="col">
+                Subject
+            </th>
+            <th scope="col">
+                Grade
+            </th>
+            <th scope="col"></th>
         </tr>
-    }
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Student.StudentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Subject.SubjectName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GradeValue)
+                </td>
+                <td>
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Edit", "Edit", new { id = item.GradeId })</button>
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Details", "Details", new { id = item.GradeId })</button>
+                    <button type="button" class="btn btn-default">@Html.ActionLink("Delete", "Delete", new { id = item.GradeId })</button>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>

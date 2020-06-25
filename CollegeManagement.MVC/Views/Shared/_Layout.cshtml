@@ -6,8 +6,10 @@
     <title>@ViewBag.Title -  Lorem Ipsum College Management</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/angularapp")
 </head>
-<body>
+<body ng-app="CMApp" ng-controller="RootController">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">

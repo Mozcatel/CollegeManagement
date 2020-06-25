@@ -8,9 +8,7 @@ namespace CollegeManagement.MVC
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js",
-                        "~/Scripts/angular.js",
-                        "~/Scripts/global.js"));
+                        "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -26,6 +24,20 @@ namespace CollegeManagement.MVC
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/bundles/angular").Include(
+                      "~/Scripts/angular.js",
+                      "~/Scripts/angular-resource.js",
+                      "~/Scripts/angular-route.js"));
+
+            bundles.Add(new StyleBundle("~/bundles/angularapp").Include(
+                      "~/Scripts/app/app.js",
+                      "~/Scripts/app/coursesController.js",
+                      "~/Scripts/app/gradesController.js",
+                      "~/Scripts/app/homeController.js",
+                      "~/Scripts/app/studentsController.js",
+                      "~/Scripts/app/subjectsController.js",
+                      "~/Scripts/app/teachersController.js"));
         }
     }
 }
